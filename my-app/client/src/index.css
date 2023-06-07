@@ -1,0 +1,51 @@
+body {
+  font-family: 'Rubik', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Rubik Mono One', sans-serif;
+}
+
+
+@keyframes wave {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(-10deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  75% {
+    transform: rotate(10deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.wave-animation {
+  font-size: 3rem;
+  margin: 2rem 0;
+  display: inline-block;
+  animation-name: wave;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #f9f9f9;
+  padding: 1em 0;
+  text-align: center;
+  font-size: 0.9em;
+  color: #555;
+}
